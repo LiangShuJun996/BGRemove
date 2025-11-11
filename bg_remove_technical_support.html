@@ -11,11 +11,120 @@
     span.s1 {font-kerning: none}
     span.s2 {text-decoration: underline ; font-kerning: none}
   </style>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    animation: slideInDown 1s ease-in-out;
+}
+
+.content {
+    padding: 30px;
+}
+
+.content h2 {
+    font-size: 1.8em;
+    color: #764ba2;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.content a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.content a:hover {
+    color: #764ba2;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5em;
+    }
+    .content h2 {
+        font-size: 1.5em;
+    }
+    .content p {
+        font-size: 1em;
+    }
+}
+  </style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>BGRemover Technical Support</b></span></h1>
-<p class="p2"><span class="s1">If you have any questions, please leave a message or send me an email.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s2"><a href="mailto:liangshujun996@163.com"><b>liangshujun996@163.com</b><b></b></a></span></h2>
-<p class="p2"><span class="s1">Thank you very much!</span></p>
+<div class="container">
+    <div class="header">
+        <h1>BGRemover Technical Support</h1>
+    </div>
+    <div class="content">
+        <p>If you have any questions, please leave a message or send me an email.</p>
+        <h2><a href="mailto:liangshujun996@163.com">liangshujun996@163.com</a></h2>
+        <p>Thank you very much!</p>
+    </div>
+</div>
 </body>
 </html>
